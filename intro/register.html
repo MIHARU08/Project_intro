@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบรับสมัครนักศึกษาใหม่ มจพ.</title>
+    <!-- เรียกใช้ฟอนต์ภาษาไทย Sarabun -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- เรียกใช้ Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- เชื่อมไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="register-page">
+
+    <!-- University Header -->
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="brand-mark"><img src="img/ตรามอ.png" alt="ตรามหาวิทยาลัย"></div>
+            <div>
+                <h1>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</h1>
+                <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK PRACHINBURI CAMPUS</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>หน้าแรก</a></li>
+			<li><a href="สาขาที่เปิดรับ.html"><i class="fa-solid fa-list"></i> สาขาที่เปิดรับ</a></li>
+            <li class="active"><a href="register.html"><i class="fa-solid fa-pen-to-square"></i> สมัครเข้าศึกษาต่อ</a></li>
+			<li><a href="พิมพ์ใบเสร็จ.html"><i class="fa-solid fa-magnifying-glass"></i> ตรวจสอบสถานะ</a></li>
+			<li><a href="ติดต่อ.html"><i class="fa-solid fa-phone"></i> ติดต่อเรา</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="ค้นหาข้อมูล...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Stepper -->
+        <div class="stepper">
+            <div class="step active">
+                <div class="step-num">1</div>
+                <div>
+                    <div>ข้อมูลผู้สมัคร</div>
+                    
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                    <div>ตรวจสอบข้อมูลการสมัคร</div>
+                    <small>และสถานะการชำระเงิน</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Left: Form -->
+            <form>
+                <!-- Section 1: ข้อมูลส่วนตัว -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fa-solid fa-user"></i> <h3>ข้อมูลส่วนตัว</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>คำนำหน้าชื่อ <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกคำนำหน้า --</option>
+                                <option>นาย</option>
+                                <option>นางสาว</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>เลขประจำตัวประชาชน <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="1-2345-67890-12-3">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>ชื่อ (ภาษาไทย) <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="กรอกชื่อภาษาไทย">
+                        </div>
+                        <div class="form-group">
+                            <label>นามสกุล (ภาษาไทย) <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="กรอกนามสกุลภาษาไทย">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>วัน/เดือน/ปีเกิด <span>*</span></label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>เพศ <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกเพศ --</option>
+                                <option>ชาย</option>
+                                <option>หญิง</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>ชื่อ (ภาษาอังกฤษ) <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="กรอกชื่อภาษาอังกฤษ">
+                        </div>
+                        <div class="form-group">
+                            <label>นามสกุล (ภาษาอังกฤษ) <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="กรอกนามสกุลภาษาอังกฤษ">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>สัญชาติ <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกสัญชาติ --</option>
+                                <option>ไทย</option>
+                                <option>อื่น ๆ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>เชื้อชาติ <span>*</span></label>
+                            <input type="text" class="form-control" value="ไทย">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>ศาสนา</label>
+                            <select class="form-control">
+                                <option>-- เลือกศาสนา --</option>
+                                <option>พุทธ</option>
+                                <option>คริสต์</option>
+                                <option>อิสลาม</option>
+                                <option>อื่น ๆ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Section 2: ข้อมูลติดต่อ -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fa-solid fa-phone-volume"></i> <h3>ข้อมูลติดต่อ</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>อีเมล <span>*</span></label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>เบอร์โทรศัพท์มือถือ <span>*</span></label>
+                            <input type="tel" class="form-control" placeholder="0xx-xxx-xxxx">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>เบอร์โทรศัพท์สำรอง</label>
+                            <input type="tel" class="form-control" placeholder="0xx-xxx-xxxx">
+                        </div>
+                        <div class="form-group">
+                            <label>LINE ID</label>
+                            <input type="text" class="form-control" placeholder="ระบุ LINE ID">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>บ้านเลขที่ / หมู่ที่ <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="เช่น 99/9 หมู่ 3">
+                        </div>
+                        <div class="form-group">
+                            <label>ถนน</label>
+                            <input type="text" class="form-control" placeholder="ระบุชื่อถนน">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>ตำบล / แขวง <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="ระบุตำบลหรือแขวง">
+                        </div>
+                        <div class="form-group">
+                            <label>อำเภอ / เขต <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="ระบุอำเภอหรือเขต">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>จังหวัด <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกจังหวัด --</option>
+                                <option>ปราจีนบุรี</option>
+                                <option>กรุงเทพมหานคร</option>
+                                <option>นครราชสีมา</option>
+                                <option>ชลบุรี</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>รหัสไปรษณีย์ <span>*</span></label>
+                            <input type="text" class="form-control" inputmode="numeric" maxlength="5" placeholder="เช่น 25000">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: ข้อมูลการศึกษา -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fa-solid fa-graduation-cap"></i> <h3>ข้อมูลการศึกษา</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>ระดับการศึกษาปัจจุบัน <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกระดับ --</option>
+                                <option>มัธยมศึกษาปีที่ 6</option>
+                                <option>ปวช.</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>ชื่อสถานศึกษา <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="ระบุชื่อสถานศึกษา">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>แผนการเรียน / สาขาวิชา <span>*</span></label>
+                            <input type="text" class="form-control" placeholder="เช่น วิทยาศาสตร์-คณิตศาสตร์">
+                        </div>
+                        <div class="form-group">
+                            <label>เกรดเฉลี่ยสะสม (GPAX) <span>*</span></label>
+                            <input type="number" class="form-control" min="0" max="4" step="0.01" placeholder="เช่น 3.50">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>จังหวัดที่ตั้งสถานศึกษา <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกจังหวัด --</option>
+                                <option>ปราจีนบุรี</option>
+                                <option>กรุงเทพมหานคร</option>
+                                <option>นครราชสีมา</option>
+                                <option>ชลบุรี</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>ปีที่สำเร็จการศึกษา <span>*</span></label>
+                            <select class="form-control">
+                                <option>-- เลือกปีการศึกษา --</option>
+                                <option>2569</option>
+                                <option>2570</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 4: คณะและสาขาที่ต้องการสมัคร -->
+                <div class="form-section">
+                    <div class="section-header">
+                        <i class="fa-solid fa-building-columns"></i> <h3>คณะสาขาที่ต้องการสมัคร</h3>
+                    </div>
+                    <p class="section-hint">เลือกสาขาที่ต้องการสมัครได้ 1 สาขา</p>
+                    <div class="program-options">
+                        <label><input type="radio" name="program" value="it"> IT</label>
+                        <label><input type="radio" name="program" value="iti"> ITI</label>
+                        <label><input type="radio" name="program" value="itt"> ITT</label>
+                        <label><input type="radio" name="program" value="ine"> INE</label>
+                        <label><input type="radio" name="program" value="inet"> INET</label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> บันทึกชั่วคราว</a>
+                    <a href="พิมพ์ใบเสร็จ.html" class="btn btn-primary">บันทึกและไปต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </form>
+
+            <!-- Right: Widgets -->
+            <aside>
+                <!-- กำหนดการ -->
+                <div class="widget schedule">
+                    <div class="widget-title"><i class="fa-regular fa-calendar-days"></i> กำหนดการรับสมัคร</div>
+                    <ul>
+                        <li>
+                            <div>
+                                <small style="color: #ffb74d;">เปิดรับสมัคร</small><br>
+                                1 พฤศจิกายน 2569
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <small style="color: #ffb74d;">ปิดรับสมัคร</small><br>
+                                21 มกราคม 2570
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- เอกสาร -->
+                <div class="widget">
+                    <div class="widget-title" style="color: var(--primary-color)"><i class="fa-regular fa-file-lines"></i> เอกสารที่ต้องเตรียม</div>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> บัตรประจำตัวประชาชน</li>
+                        <li><i class="fa-regular fa-circle-check"></i> รูปถ่ายหน้าตรง</li>
+                        <li><i class="fa-regular fa-circle-check"></i> ใบแสดงผลการเรียน (ปพ.1)</li>
+                    </ul>
+                </div>
+
+                <!-- ติดต่อ -->
+                <div class="widget">
+                    <div class="widget-title" style="color: var(--primary-color)"><i class="fa-regular fa-circle-question"></i> หากมีข้อสงสัย</div>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 0-2555-2000 ต่อ 1234</li>
+                        <li><i class="fa-regular fa-envelope"></i> admission@kmutnb.ac.th</li>
+                    </ul>
+                </div>
+
+                <div class="register-illustration" aria-hidden="true"></div>
+            </aside>
+        </div>
+        
+    </main>
+
+    <footer class="site-footer">
+        © 2570 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี | ระบบรับสมัครนักศึกษาใหม่
+    </footer>
+
+</body>
+</html>
